@@ -722,7 +722,7 @@ class AcsfToolsCommands extends AcsfToolsUtils implements SiteAliasManagerAwareI
    * @return array
    *   The filtered list of sites.
    */
-  protected function filterSites(array $sites, string $filter = NULL) {
+  protected function filterSites(array $sites, ?string $filter = NULL) {
     if (empty($filter)) {
       return $sites;
     }
